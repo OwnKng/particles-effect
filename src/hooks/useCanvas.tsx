@@ -20,8 +20,7 @@ export const useCanvas = () => {
     const currentCoords = {
       x: event.clientX,
       y: event.clientY,
-      age: 0,
-      size: 32,
+      size: 64,
     }
 
     coordsRef.current = [...coordsRef.current, currentCoords]
