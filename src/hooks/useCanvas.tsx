@@ -73,6 +73,7 @@ export const useCanvas = () => {
   useEffect(() => {
     requestRef.current = requestAnimationFrame(drawParticles)
     return () => cancelAnimationFrame(requestRef.current)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return {
